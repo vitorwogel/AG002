@@ -6,7 +6,10 @@ def get_model():
     return model
 
 def predict(model, features):
-    return model.predict(features)
+    try:
+        return model.predict(features)
+    except:
+        return None
 
 def transform(features):
 
@@ -79,7 +82,12 @@ def main():
     if features is not None:
         model = get_model()
         prediction = predict(model, features)
-        print(f"The predicted species is {get_class(prediction[0])}")
+        
+        try:
+            print(f"The predicted species is {get_class(prediction[0])}")
+        except:
+            print("Something went wrong, please try again.")
+            main()
 
 if __name__ == "__main__":
     main()
