@@ -15,7 +15,7 @@
     <li>Crie uma máquina virtual Python na raiz no repositório clonado:<br><code>python -m venv <i>env</i></code></li>
     <li>Inicie a env:<br><code>source env/Scripts/activate</code></li>
     <li>Instale todas as bibliotecas necessárias:<br><code>pip install -r requirements.txt</code></li>
-    <li>Crie uma pasta <i>data</i> dentro de <i>src</i></li>
+    <li>Crie uma pasta <i>data</i> dentro de <i>src</i><br><a>E coloque o download da base de dados nesta pasta</a></li>
     <li>Rode todas as células do Python Notebook <i>main.ipynb</i></li>
     <li>Rode o arquivo <i>app.py</i>:<br><code>python src/app.py</code></li>
     <li>Entre com as features requeridas no terminal e obtenha a previsão do modelo.</li>
